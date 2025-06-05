@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Inter";
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 75px;
+  gap: 36px;
+  height: 100px;
+  background: #0d0e21;
+  box-shadow: 0px 6px 25px rgba(255, 255, 255, 0.05);
+}
+
+main {
+  display: flex;
+  background: #0d0e21;
+  flex-grow: 1;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 32px;
+  flex-grow: 1;
+}
+
+.menu {
+  display: flex;
+  gap: 48px;
+}
+
+a {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #ff2d74 0%, #39b5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  min-width: 134px;
+  align-self: stretch;
+  align-items: flex-end;
+}
+
+.info,
+.girl {
+  width: 100%;
+}
+
+.info {
+  /* Frame 3 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 36px;
+  gap: 56px;
+
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.info-headers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 92px;
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 180%;
+  letter-spacing: -0.02em;
+  color: #b7b7b7;
+  margin: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: linear-gradient(90deg, #ff2d74 0%, #39b5fa 100%);
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  max-width: 190px;
+  height: 62px;
+}
+
+.girl {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  background-image: url("./girl.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ellipse {
+  position: relative;
+  top: calc(50% - 200px);
+  max-width: 557px;
+  width: 100%;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ff2d74 0%, #39b5fa 70.19%);
+}
